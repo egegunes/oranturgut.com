@@ -4,18 +4,8 @@ fragment = "footer"
 date = "2016-09-07"
 weight = 1200
 #background = ""
-
-menu_title = "Link Title"
-
-[asset]
-  title = "Logo Title"
-  image = "logo.svg"
-  text = "Logo Subtext"
-  url = "#"
 +++
 
-#### Description Title
+#### Oran & Turgut Hukuk Bürosu
 
-Project description such as:
-Open source theme for your next project
-Provided by Okkur Labs
+[info@oranturgut.com](mailto:info@oranturgut.com)
