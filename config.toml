@@ -2,98 +2,111 @@
 baseurl = "/"
 languageCode = "en-us"
 title = "Oran & Turgut Hukuk Bürosu"
-theme = "syna"
-enableGitInfo = true
-version = "0.15.2"
-
-# Google Analytics tracking
-googleAnalytics = ""
-
-[outputs]
-  home = ["HTML", "JSON"]
-
-[frontmatter]
-date = ["date", "lastmod"]
-lastmod = ["lastmod", ":git", "date"]
+theme = "infinity-hugo"
 
 [params]
-  name = "Oran & Turgut"
-  description = "Oran & Turgut Hukuk Bürosu"
+# Navigation
+[params.navigation]
+logo = "images/logo.png"
+home = "Anasayfa"
+about = "Hakkımızda"
+service = "Hizmetlerimiz"
+contact = "İletişim"
 
-  [params.style]
-    #background = "secondary"
+# Hero Area
+[params.hero]
+enable      = true
+bg          = "images/justice.jpg"
+title       = "ORAN & TURGUT HUKUK BÜROSU"
+subtitle    = ""
+btnText     = ""
+countdownYear = ""
+countdownMonth = ""
+countdownDay  = ""
 
-  # Theme customizations
-  # Assets relative to 'static/'
-  [params.custom]
-    favicon = "favicon.ico"
-    favicon_ico_sizes = "16x16 32x32"
-    favicon_png = "favicon.png"
-    favicon_svg = "favicon.svg"
+# About Section
+[params.about]
+enable      = true
+heading     = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ipsa recusandae consequatur veniam, reiciendis odit quia eaque vel eius a."
+description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla-mco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, aspernatur."
 
-  # Piwik tracking
-  [params.analytics.piwik]
-    #url = ""
-    #id = ""
-    #domain = "" # Track subdomains via "*.example.com"
-    # Optional hash for integrity check
-    #hash = "sha512-RfeD0pacGTqy9m7U6PgehQfS4cc7SIt+e+P+H5e848kEvB/RW84CUGO3O4O3LNbxjevym6KPUZ8muPsMrI8WIw=="
+[[params.about.member]]
+image   = "images/gulsumoran.png"
+name    = "Gülsüm Oran"
+title   = "Avukat"
+phone   = "+90 538 476 16 66"
+email   = "gulsum@oranturgut.com"
 
-  # Optional, global disable switch for fontawesome related files
-  # For custom fontawesome js files use the custom.js method
-  [params.fontawesome]
-    disabled = false
-    pro = false
+[[params.about.member]]
+image   = "images/aliturgut.jpg"
+name    = "Ali Turgut"
+title   = "Avukat"
+phone   = "+90 534 419 41 49"
+email   = "ali@oranturgut.com"
 
-  [params.colors]
-    primary = "#00838F"
-    secondary = "#868e96"
-    success = "#008f54"
-    info = "#00c9dc"
-    warning = "#fdf314"
-    danger = "#dc1200"
-    light = "#f8f9fa"
-    dark = "#343a40"
 
-# main/prepend/postpend menus are displayed in nav fragment.
-# Keep an eye out for updates. These will be moved out to make navbar more
-# configurable.
-[[menu.main]]
-  url = "/"
-  name = "Ana Sayfa"
-  weight = 10
+# Service Section
+[params.service]
+enable      = true
+title       = "Hukuki sorunlarınıza efektif çözümler"
+subtitle    = ""
 
-[[menu.main]]
-  url = "#services"
-  name = "Hizmetlerimiz"
-  weight = 20
+[[params.service.serviceItem]]
+icon    = "tf-ion-android-people"
+title   = "AİLE HUKUKU"
+description = ""
+delay   = "0s"
 
-[[menu.main]]
-  url = "#members"
-  name = "Ekibimiz"
-  weight = 30
+[[params.service.serviceItem]]
+icon    = "tf-ion-android-alert"
+title   = "CEZA HUKUKU"
+description = ""
+delay   = "0.2s"
 
-[[menu.main]]
-  url = "#contact-info"
-  name = "İletişim"
-  weight = 40
+[[params.service.serviceItem]]
+icon    = "tf-ion-compose"
+title   = "MİRAS HUKUKU"
+description = ""
+delay   = "0.4s"
 
-[[menu.footer]]
-  url = "/"
-  name = "Ana Sayfa"
-  weight = 10
+[[params.service.serviceItem]]
+icon    = "tf-ion-cash"
+title   = "İCRA & İFLAS HUKUKU"
+description = ""
+delay   = "0.6s"
 
-[[menu.footer]]
-  url = "#services"
-  name = "Hizmetlerimiz"
-  weight = 20
+[[params.service.serviceItem]]
+icon    = "tf-ion-ios-home"
+title   = "SİGORTA HUKUKU"
+description = ""
+delay   = "0.8s"
 
-[[menu.footer]]
-  url = "#members"
-  name = "Ekibimiz"
-  weight = 30
+[[params.service.serviceItem]]
+icon    = "tf-ion-ios-briefcase"
+title   = "İŞ HUKUKU"
+description = ""
+delay   = "1s"
 
-[[menu.footer]]
-  url = "#contact-info"
-  name = "İletişim"
-  weight = 40
+[[params.service.serviceItem]]
+icon    = "tf-ion-android-globe"
+title   = "ULUSLARARASI HUKUK"
+description = ""
+delay   = "1.2s"
+
+[[params.service.serviceItem]]
+icon    = "tf-ion-arrow-graph-up-right"
+title   = "TİCARET HUKUKU"
+description = ""
+delay   = "1.5s"
+
+# Call to Action Section
+[params.cta]
+enable      = false
+bg          = "images/call-to-action.jpg"
+title       = "Subscribe to our mailing list"
+subtitle    = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod"
+
+[params.contact]
+enable      = false
+title       = "Bize Ulaşın"
+subtitle    = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Utenim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex"

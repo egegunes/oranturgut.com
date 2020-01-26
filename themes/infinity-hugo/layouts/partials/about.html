@@ -1,0 +1,22 @@
+{{ if .Site.Params.about.enable }}
+    {{"<!-- About Section -->" | safeHTML}}
+    <section id="about" class="section about bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 wow fadeInLeft">
+                    <div class="row">
+                      {{ range .Site.Params.about.member }}
+                        <div class="col-md-6 col-sm-12 person">
+                          <img src="{{ .image }}" alt="{{ .name }}">
+                          <h2>{{ .name }}</h2>
+                          <p>{{ .title }}</p>
+                          <p>{{ .email }}</p>
+                          <p>{{ .phone }}</p>
+                        </div>
+                      {{ end }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{{ end }}
