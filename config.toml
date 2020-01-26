@@ -1,7 +1,7 @@
 # Site settings
 baseurl = "/"
 languageCode = "en-us"
-title = "Oran & Turgut Hukuk Bürosu"
+title = "Oran & Turgut"
 theme = "infinity-hugo"
 
 [params]
